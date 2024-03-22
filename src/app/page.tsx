@@ -45,7 +45,7 @@ function App() {
           className="search-input"
         />
         <div id="search" onClick={fetchUser} className='text-[19px]'>
-           <FaSearch className=' text-xl'/> Search User
+           <FaSearch className='text-xl'/> Search User
         </div>
       </div>
 
@@ -53,7 +53,7 @@ function App() {
         <div className="main-info">
           <img src={userData.avatar_url} alt="avatar" id="prof-img" />
           <span className="name" id="name">{userData.name}</span>
-          <a href={`@${userData.login}`} id="username">@{userData.login}</a>
+          <a href={`https://github.com/${userData.login}`} id="username">@{userData.login}</a>
         </div>
         <div className="bio">
           <p id="bio">{userData.bio}</p>
