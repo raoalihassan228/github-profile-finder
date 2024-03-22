@@ -53,7 +53,7 @@ function App() {
         <div className="main-info">
           <img src={userData.avatar_url} alt="avatar" id="prof-img" />
           <span className="name" id="name">{userData.name}</span>
-          <a href={userData.html_url} id="username">@{userData.login}</a>
+          <a href={`@${userData.login}`} id="username">@{userData.login}</a>
         </div>
         <div className="bio">
           <p id="bio">{userData.bio}</p>
